@@ -83,3 +83,35 @@ body.light-mode { background-color: #f1f5f9; color: #0f172a; }
 .light-mode .nav-links a, .light-mode .nav-logo span { color: #0f172a; }
 .light-mode .card, .light-mode .product-card { background: white; border-color: #cbd5e1; }
 .light-mode h1, .light-mode h2, .light-mode h3 { color: #0f172a; }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #334155;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    font-family: inherit;
+}
+
+.light-mode .contact-form {
+    background: white;
+    border-color: #cbd5e1;
+}
+
+.light-mode .contact-form input, .light-mode .contact-form textarea {
+    background: #f1f5f9;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}

@@ -115,3 +115,27 @@ body.light-mode { background-color: #f1f5f9; color: #0f172a; }
     color: #0f172a;
     border-color: #cbd5e1;
 }
+/* ... KEEP ALL YOUR EXISTING CSS ... */
+
+/* Add these to the bottom to handle the new POC sections */
+.separator {
+    border: 0;
+    height: 1px;
+    background: #334155;
+    margin: 100px auto;
+    width: 80%;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 640px;
+    background: white;
+    border-radius: 15px;
+    border: 3px solid #38bdf8;
+    overflow: hidden;
+}
+
+/* Specific button color for POC 2 to tell them apart */
+#google-custom .buy-btn {
+    background: #a855f7;
+}

@@ -110,3 +110,43 @@ body.light-mode {
     background-color: #1e293b;
     color: white;
 }
+/* The Grid Container */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatically makes columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual Product Cards */
+.product-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Gentle lift effect on hover */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.buy-btn {
+    width: 100%;
+    background: #10b981; /* Green for "Buy/Action" buttons */
+    margin-top: 10px;
+}
+
+/* Light Mode Support for Gallery */
+.light-mode .product-card {
+    background: white;
+    border-color: #cbd5e1;
+}

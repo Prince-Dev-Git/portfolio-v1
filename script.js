@@ -1,10 +1,23 @@
-// 1. Find the button and the hidden message in the HTML
-const button = document.getElementById('contactBtn');
+// Contact Button Logic
+const contactBtn = document.getElementById('contactBtn');
 const message = document.getElementById('message');
 
-// 2. Listen for a click
-button.addEventListener('click', () => {
-    // 3. When clicked, show the message and change the button text
+contactBtn.addEventListener('click', () => {
     message.style.display = 'block';
-    button.innerText = 'Email Revealed!';
+    contactBtn.innerText = 'Email Revealed!';
+});
+
+// Theme Toggle Logic
+const themeBtn = document.getElementById('themeToggle');
+const body = document.body;
+
+themeBtn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    // Change button text based on mode
+    if (body.classList.contains('light-mode')) {
+        themeBtn.innerText = "☀️ Light Mode";
+    } else {
+        themeBtn.innerText = "🌙 Dark Mode";
+    }
 });

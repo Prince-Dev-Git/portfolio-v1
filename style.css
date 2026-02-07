@@ -1,16 +1,40 @@
-button {
-    background-color: #38bdf8;
-    color: #0f172a;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+/* Image Styling */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
 }
 
-button:hover {
-    background-color: #7dd3fc;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+/* Social Links Styling */
+.socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.socials a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #1e293b;
+    color: white;
+}
+
+/* Light Mode Variables */
+.light-mode {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+.light-mode .card {
+    background: white;
+    border-color: #cbd5e1;
 }

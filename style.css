@@ -150,3 +150,38 @@ body.light-mode {
     background: white;
     border-color: #cbd5e1;
 }
+/* Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(30, 41, 59, 0.9); /* See-through dark blue */
+    backdrop-filter: blur(10px); /* Modern blur effect */
+    z-index: 1000;
+    border-bottom: 1px solid #334155;
+    box-sizing: border-box;
+}
+
+.nav-logo { font-weight: bold; font-size: 1.5rem; color: #38bdf8; }
+.nav-logo span { color: white; }
+
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: #f8fafc; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover { color: #38bdf8; }
+
+/* Light Mode for Nav */
+.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #cbd5e1;
+}
+.light-mode .nav-links a, .light-mode .nav-logo span { color: #0f172a; }
+
+/* Add spacing so the navbar doesn't cover your content */
+body { padding-top: 80px; }
+
+/* Smooth Scrolling */
+html { scroll-behavior: smooth; }

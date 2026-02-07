@@ -77,20 +77,22 @@
         </iframe>
     </div>
 </section>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/success.html';}"></iframe>
 <section id="google-custom" class="section">
     <h2 class="section-title">POC 2: Google Custom (Unlimited)</h2>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/formResponse" 
-          method="POST" 
-          class="contact-form">
-        
-        <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-        
-        <input type="email" name="entry.1045781291" placeholder="Your Email" required>
-        
-        <textarea name="entry.1065046570" placeholder="Your Message or Address" rows="4" required></textarea>
-        
-        <button type="submit" class="buy-btn" style="background: #a855f7;">Send via Google Custom</button>
-    </form>
+    <script>var submitted=false;</script>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/formResponse" 
+      method="POST" 
+      target="hidden_iframe" 
+      onsubmit="submitted=true;"
+      class="contact-form">
+    
+    <input type="text" name="entry.2005620554" placeholder="Your Name" required>
+    <input type="email" name="entry.1045781291" placeholder="Your Email" required>
+    <textarea name="entry.1065046570" placeholder="Your Message" rows="4" required></textarea>
+    
+    <button type="submit" class="buy-btn" style="background: #a855f7;">Send via Google Custom</button>
+</form>
 </section>
     <script src="script.js"></script>
 </body>

@@ -3,56 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Prince-Dev | Product Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
-<nav class="navbar">
+
+    <nav class="navbar">
         <div class="nav-logo">Prince<span>Dev</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><button id="themeToggle" class="theme-btn">🌙</button></li>
         </ul>
-        <button id="themeToggle" class="theme-btn">🌙</button>
     </nav>
 
-    <section id="home" class="hero-section">
-    <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Prince Profile" class="profile-img">
-        
-        <h1>Prince-Dev-Git</h1>
-        <p>Future Product Developer</p>
-        
-        <button id="contactBtn">Contact Me</button>
-        <p id="message" style="display:none; margin-top: 15px; color: #38bdf8;">
-           Email: prince-dev@example.com
-        </p>
+    <section id="home" class="section">
+        <div class="card">
+            <img src="./assets/images/profile.jpg" alt="Prince" class="profile-img">
+            <h1>Prince-Dev-Git</h1>
+            <p>Future Product Developer</p>
+            
+            <button id="contactBtn">Contact Me</button>
+            <p id="message" style="display:none; margin-top: 15px; color: #38bdf8;">
+               Email: prince-dev@example.com
+            </p>
 
-        <div class="socials">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
         </div>
-    </div></section>
-    <section id="products">
-    <h2 style="text-align: center; margin-top: 40px;">My Products</h2>
-<div class="product-grid">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Product 1">
-        <h3>Web Solution A</h3>
-        <p>A custom tool for local businesses.</p>
-        <button class="buy-btn">View Details</button>
-    </div>
+    </section>
 
-    <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Product 2">
-        <h3>E-com Template</h3>
-        <p>High-converting landing page.</p>
-        <button class="buy-btn">View Details</button>
-    </div>
-</div>
+    <section id="products" class="section">
+        <h2 class="section-title">My Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <h3>Web Solution A</h3>
+                <p>Custom tool for businesses.</p>
+                <button class="buy-btn">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>E-com Template</h3>
+                <p>High-converting landing page.</p>
+                <button class="buy-btn">View Details</button>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script></section>
+    <script src="script.js"></script>
 </body>
 </html>

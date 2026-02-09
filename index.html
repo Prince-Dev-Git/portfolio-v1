@@ -3,97 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
     <title>Prince-Dev | Product Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 </head>
-<body>
+<body class="dark-theme">
 
     <nav class="navbar">
         <div class="nav-logo">Prince<span>Dev</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#netlify-section">Contact</a></li>
-            <li><a href="#poc-area">POC Labs</a></li> <li><button id="themeToggle" class="theme-btn">🌙</button></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="themeToggle" class="theme-btn">🌙</button></li>
         </ul>
     </nav>
 
-    <section id="home" class="section">
+    <section id="home" class="section reveal">
         <div class="card">
-            <img src="./assets/images/logo.png" alt="Brand Logo" style="width: 50px; margin-bottom: 10px;">
             <img src="./assets/images/profile.jpg" alt="Prince" class="profile-img">
             <h1>Prince-Dev-Git</h1>
             <p>Future Product Developer</p>
-            <button id="contactBtn">Reveal Email</button>
-            <p id="message" style="display:none; margin-top:10px;">Email: prince-dev@example.com</p>
             <div class="socials">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Prince-Dev-Git" target="_blank">GitHub</a>
             </div>
         </div>
     </section>
 
     <section id="products" class="section">
-        <h2 class="section-title">My Products</h2>
+        <h2 class="section-title reveal">My Featured Products</h2>
         <div class="product-grid">
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="https://via.placeholder.com/150" alt="Product 1">
-                <h3>Web Solution A</h3>
-                <p>Custom tool for businesses.</p>
+                <h3>Custom Web App</h3>
+                <p>High-performance solution for small businesses.</p>
                 <button class="buy-btn">View Details</button>
             </div>
-            <div class="product-card">
+            <div class="product-card reveal">
                 <img src="https://via.placeholder.com/150" alt="Product 2">
-                <h3>E-com Template</h3>
-                <p>High-converting landing page.</p>
+                <h3>UI/UX Kit</h3>
+                <p>A professional landing page template.</p>
                 <button class="buy-btn">View Details</button>
             </div>
         </div>
     </section>
 
-    <section id="netlify-section" class="section">
-        <h2 class="section-title">Get In Touch (Netlify)</h2>
-        <form name="contact" method="POST" data-netlify="true" action="/success.html" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit" class="buy-btn">Send via Netlify</button>
+    <section id="contact" class="section reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <p style="text-align: center; color: #94a3b8; margin-bottom: 25px;">Let's discuss your next project.</p>
+        
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/formResponse" 
+              method="POST" 
+              target="hidden_iframe" 
+              onsubmit="submitted=true;"
+              class="contact-form">
+            
+            <input type="text" name="entry.2005620554" placeholder="Your Name" required>
+            <input type="email" name="entry.1045781291" placeholder="Your Email" required>
+            <textarea name="entry.1065046570" placeholder="Your Project Details" rows="5" required></textarea>
+            
+            <button type="submit" class="buy-btn">Send Message</button>
         </form>
     </section>
 
-    <hr class="separator" id="poc-area">
+    <footer style="text-align: center; padding: 40px; color: #64748b;">
+        <p>&copy; 2026 Prince-Dev-Git. All rights reserved.</p>
+    </footer>
 
-    <section id="google-embed" class="section">
-    <h2 class="section-title">POC 1: Google Embed (Unlimited)</h2>
-    <div class="form-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/viewform?embedded=true" 
-                width="100%" 
-                height="800" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                Loading…
-        </iframe>
-    </div>
-</section>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/success.html';}"></iframe>
-<section id="google-custom" class="section">
-    <h2 class="section-title">POC 2: Google Custom (Unlimited)</h2>
-    <script>var submitted=false;</script>
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/formResponse" 
-      method="POST" 
-      target="hidden_iframe" 
-      onsubmit="submitted=true;"
-      class="contact-form">
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/success.html';}"></iframe>
     
-    <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-    <input type="email" name="entry.1045781291" placeholder="Your Email" required>
-    <textarea name="entry.1065046570" placeholder="Your Message" rows="4" required></textarea>
-    
-    <button type="submit" class="buy-btn" style="background: #a855f7;">Send via Google Custom</button>
-</form>
-</section>
     <script src="script.js"></script>
 </body>
 </html>

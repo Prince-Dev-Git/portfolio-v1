@@ -1,23 +1,31 @@
-// Contact Button Logic
-const contactBtn = document.getElementById('contactBtn');
-const message = document.getElementById('message');
+// Global state for form submission
+var submitted = false;
 
-contactBtn.addEventListener('click', () => {
-    message.style.display = 'block';
-    contactBtn.innerText = 'Email Revealed!';
-});
-
-// Theme Toggle Logic
+// 1. THEME TOGGLE LOGIC
 const themeBtn = document.getElementById('themeToggle');
-const body = document.body;
+if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+        // Switch icon between Moon and Sun
+        themeBtn.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+    });
+}
 
-themeBtn.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    
-    // Change button text based on mode
-    if (body.classList.contains('light-mode')) {
-        themeBtn.innerText = "☀️ Light Mode";
-    } else {
-        themeBtn.innerText = "🌙 Dark Mode";
-    }
+// 2. SCROLL REVEAL OBSERVER
+const observerOptions = {
+    threshold: 0.15
+};
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, observerOptions);
+
+// Initialize after DOM loads
+document.addEventListener("DOMContentLoaded", () => {
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach((el) => revealObserver.observe(el));
 });

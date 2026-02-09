@@ -3,76 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince-Dev | Product Developer Portfolio</title>
+    <title>Maruti Chaya | Innovating with Technology</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 </head>
 <body class="dark-theme">
 
     <nav class="navbar">
-        <div class="nav-logo">Prince<span>Dev</span></div>
+        <div class="nav-brand">
+            <img src="./assets/images/logo.png" alt="Maruti Chaya Logo" class="nav-logo-img">
+            <div class="nav-logo-text">Maruti<span>Chaya</span></div>
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Products</a></li>
+            <li><a href="#products">Contact</a></li>
+            <li><a href="#contact">About Us</a></li>
             <li><button id="themeToggle" class="theme-btn">🌙</button></li>
         </ul>
     </nav>
 
     <section id="home" class="section reveal">
         <div class="card">
-            <img src="./assets/images/profile.jpg" alt="Prince" class="profile-img">
-            <h1>Prince-Dev-Git</h1>
-            <p>Future Product Developer</p>
+            <img src="./assets/images/logo.png" alt="Maruti Chaya" class="profile-img">
+            <h1>Maruti Chaya</h1>
+            <p>Empowering Businesses through Digital Innovation</p>
             <div class="socials">
-                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
                 <a href="https://github.com/Prince-Dev-Git" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
             </div>
         </div>
     </section>
 
     <section id="products" class="section">
-        <h2 class="section-title reveal">My Featured Products</h2>
+        <h2 class="section-title reveal">Our Solutions</h2>
         <div class="product-grid">
             <div class="product-card reveal">
-                <img src="https://via.placeholder.com/150" alt="Product 1">
-                <h3>Custom Web App</h3>
-                <p>High-performance solution for small businesses.</p>
-                <button class="buy-btn">View Details</button>
+                <h3>Custom Web Apps</h3>
+                <p>Tailor-made software built for performance.</p>
+                <button class="buy-btn">Explore</button>
             </div>
             <div class="product-card reveal">
-                <img src="https://via.placeholder.com/150" alt="Product 2">
-                <h3>UI/UX Kit</h3>
-                <p>A professional landing page template.</p>
-                <button class="buy-btn">View Details</button>
+                <h3>UI/UX Systems</h3>
+                <p>Clean, modern, and high-converting designs.</p>
+                <button class="buy-btn">Explore</button>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section reveal">
         <h2 class="section-title">Get In Touch</h2>
-        <p style="text-align: center; color: #94a3b8; margin-bottom: 25px;">Let's discuss your next project.</p>
-        
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/formResponse" 
-              method="POST" 
-              target="hidden_iframe" 
-              onsubmit="submitted=true;"
-              class="contact-form">
+              method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="contact-form">
             
             <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-            <input type="email" name="entry.1045781291" placeholder="Your Email" required>
-            <textarea name="entry.1065046570" placeholder="Your Project Details" rows="5" required></textarea>
+            
+            <input type="tel" name="entry.1166974658" placeholder="Your Phone Number" required>
+            
+            <input type="email" name="entry.1045781291" placeholder="Your Email (Optional)">
+
+            <textarea name="entry.1065046570" placeholder="Your Requirement" rows="5" required></textarea>
             
             <button type="submit" class="buy-btn">Send Message</button>
         </form>
     </section>
 
-    <footer style="text-align: center; padding: 40px; color: #64748b;">
-        <p>&copy; 2026 Prince-Dev-Git. All rights reserved.</p>
-    </footer>
+     <section id="about" class="section reveal">
+        <h2 class="section-title">About Us</h2>
+        <div class="card about-content">
+            <p>At <strong>Maruti Chaya</strong>, we bridge the gap between complex problems and elegant digital solutions. Founded on the principles of speed, security, and scalability, we specialize in building high-performance products that help entrepreneurs and businesses scale in the modern market.</p>
+            <p>Our mission is to provide technology that isn't just functional, but also visually captivating and user-centric.</p>
+        </div>
+    </section>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/success.html';}"></iframe>
-    
     <script src="script.js"></script>
 </body>
 </html>

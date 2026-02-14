@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maruti Chaya | Innovating with Technology</title>
+    <title>Maruti Chaya | Developer & Builder | Virar East</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 </head>
@@ -16,67 +16,74 @@
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">Products</a></li>
-            <li><a href="#products">Contact</a></li>
-            <li><a href="#contact">About Us</a></li>
+            <li><a href="#gallery">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><button id="themeToggle" class="theme-btn">🌙</button></li>
         </ul>
     </nav>
 
     <section id="home" class="section reveal">
-        <div class="card">
-            <img src="./assets/images/logo.png" alt="Maruti Chaya" class="profile-img">
-            <h1>Maruti Chaya</h1>
-            <p>Empowering Businesses through Digital Innovation</p>
-            <div class="socials">
-                <a href="https://github.com/Prince-Dev-Git" target="_blank">GitHub</a>
-                <a href="#" target="_blank">LinkedIn</a>
+        <div class="hero-container">
+            <h1 data-en="Maruti Chaya: Your Gateway to Virar East" data-hi="मारुति छाया: विरार ईस्ट का आपका प्रवेश द्वार">
+                Maruti Chaya: Your Gateway to Virar East
+            </h1>
+            <p class="location-tag">📍 Near RTO Office, Virar (East)</p>
+            
+            <div class="connectivity-grid">
+                <div class="fact">
+                    <strong data-en="5 Mins" data-hi="5 मिनट">5 Mins</strong>
+                    <span data-en="to RTO Office" data-hi="RTO ऑफिस तक">to RTO Office</span>
+                </div>
+                <div class="fact">
+                    <strong data-en="15 Mins" data-hi="15 मिनट">15 Mins</strong>
+                    <span data-en="to Railway Station" data-hi="रेलवे स्टेशन तक">to Railway Station</span>
+                </div>
+                <div class="fact">
+                    <strong data-en="Future" data-hi="भविष्य">Future</strong>
+                    <span data-en="Coastal & Metro" data-hi="कोस्टल और मेट्रो">Coastal & Metro</span>
+                </div>
             </div>
+            
+            <a href="#contact" class="buy-btn">Inquire Now / पूछताछ करें</a>
         </div>
     </section>
 
-    <section id="products" class="section">
-        <h2 class="section-title reveal">Our Solutions</h2>
-        <div class="product-grid">
-            <div class="product-card reveal">
-                <h3>Custom Web Apps</h3>
-                <p>Tailor-made software built for performance.</p>
-                <button class="buy-btn">Explore</button>
+    <section id="gallery" class="section reveal">
+        <h2 class="section-title">Project Showcase</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active"><img src="https://via.placeholder.com/800x450/1e1e1e/f59e0b?text=Main+Site+Progress" alt="Site Progress"></div>
+                <div class="slide"><img src="https://via.placeholder.com/800x450/1e1e1e/f59e0b?text=Interior+Layout" alt="Interior View"></div>
+                <div class="slide"><img src="https://via.placeholder.com/800x450/1e1e1e/f59e0b?text=Project+Brochure" alt="Brochure Preview"></div>
             </div>
-            <div class="product-card reveal">
-                <h3>UI/UX Systems</h3>
-                <p>Clean, modern, and high-converting designs.</p>
-                <button class="buy-btn">Explore</button>
-            </div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+             <a href="#contact" class="buy-btn secondary-btn">Download Brochure</a>
         </div>
     </section>
 
     <section id="contact" class="section reveal">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Consult with the Builder</h2>
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtv6T8dRLQyGLWOCKk1b24Zu75n8CUfkOw5qzthLblAXhYyw/formResponse" 
               method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="contact-form">
             
             <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-            
-            <input type="tel" name="entry.1166974658" placeholder="Your Phone Number" required>
-            
             <input type="email" name="entry.1045781291" placeholder="Your Email (Optional)">
-
-            <textarea name="entry.1065046570" placeholder="Your Requirement" rows="5" required></textarea>
+            <input type="tel" name="entry.PHONE_FIELD_ID" placeholder="Phone Number" required>
+            <textarea name="entry.1065046570" placeholder="Your Requirement" rows="4" required></textarea>
             
-            <button type="submit" class="buy-btn">Send Message</button>
+            <button type="submit" class="buy-btn">Send Details</button>
         </form>
     </section>
 
-     <section id="about" class="section reveal">
-        <h2 class="section-title">About Us</h2>
-        <div class="card about-content">
-            <p>At <strong>Maruti Chaya</strong>, we bridge the gap between complex problems and elegant digital solutions. Founded on the principles of speed, security, and scalability, we specialize in building high-performance products that help entrepreneurs and businesses scale in the modern market.</p>
-            <p>Our mission is to provide technology that isn't just functional, but also visually captivating and user-centric.</p>
-        </div>
-    </section>
+    <footer style="text-align: center; padding: 40px; color: #64748b;">
+        <p>&copy; 2026 Maruti Chaya | Virar East Expert</p>
+    </footer>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/success.html';}"></iframe>
+    
     <script src="script.js"></script>
 </body>
 </html>

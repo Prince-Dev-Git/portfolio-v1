@@ -277,3 +277,61 @@ body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg-color);
 /* Buttons */
 .buy-btn { background: var(--accent-color); color: white; padding: 14px 28px; border: none; border-radius: 30px; cursor: pointer; font-weight: bold; transition: 0.3s; }
 .buy-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3); }
+
+:root {
+    --bg-color: #121212;
+    --text-color: #f8fafc;
+    --card-bg: #1e1e1e;
+    --accent-color: #f59e0b; /* Vibrant Orange */
+    --border-color: #333333;
+}
+
+.light-mode {
+    --bg-color: #fff9f0; /* Light Orange Background */
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --border-color: #ffe0b3;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-color); transition: 0.4s; overflow-x: hidden; }
+
+/* NAVBAR */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; position: sticky; top: 0; background: var(--bg-color); border-bottom: 1px solid var(--border-color); z-index: 1000; }
+.nav-brand { display: flex; align-items: center; gap: 10px; }
+.nav-logo-img { height: 40px; border-radius: 50%; }
+.nav-logo-text span { color: var(--accent-color); }
+.nav-links { display: flex; list-style: none; gap: 20px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text-color); }
+
+/* HERO & CONNECTIVITY */
+.hero-container { text-align: center; padding: 60px 0; }
+.location-tag { color: var(--accent-color); font-weight: bold; margin-bottom: 20px; }
+.connectivity-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 30px auto; max-width: 800px; }
+.fact { background: var(--card-bg); padding: 15px; border-radius: 10px; border-left: 4px solid var(--accent-color); text-align: left; }
+.fact strong { display: block; color: var(--accent-color); font-size: 1.2rem; }
+.fact span { font-size: 0.85rem; opacity: 0.8; }
+
+/* SLIDER */
+.slider-container { position: relative; max-width: 850px; margin: 0 auto; overflow: hidden; border-radius: 20px; border: 1px solid var(--border-color); }
+.slide { display: none; width: 100%; animation: fadeIn 0.5s; }
+.slide.active { display: block; }
+.slide img { width: 100%; height: auto; display: block; }
+.slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: white; border: none; padding: 15px; cursor: pointer; border-radius: 50%; z-index: 10; }
+.next { right: 20px; } .prev { left: 20px; }
+
+/* BUTTONS */
+.buy-btn { background: var(--accent-color); color: white; padding: 14px 32px; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; transition: 0.3s; display: inline-block; text-decoration: none; }
+.buy-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(245, 158, 11, 0.4); }
+.secondary-btn { background: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); }
+
+/* REVEAL LOGIC */
+.section { padding: 60px 8%; }
+.reveal { opacity: 0; transform: translateY(30px); transition: 0.8s ease-out; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* FORM */
+.contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { padding: 14px; background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 10px; outline: none; }
+
+@keyframes fadeIn { from { opacity: 0.4; } to { opacity: 1; } }
